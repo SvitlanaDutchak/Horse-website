@@ -1,7 +1,16 @@
 .header {
-  width: 100%;
-  height: 100vh;
-  background-color: grey;
+    background-image: url(/img/header__background.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 564px;
+    position: relative;
+    z-index: 0;
+    &__bottom__cloud__background{
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: auto;
+    }
 }
 
 .footer {
@@ -34,6 +43,4 @@
       color: #7D808A;
     }
   }
-}
-.header{
 }
