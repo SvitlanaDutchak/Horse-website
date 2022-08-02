@@ -1,10 +1,21 @@
-@import 'variables';
+@import 'variables'; 
+//  змінні
 @import 'reset';
+// normalize css
 @import 'base';
+//  базові стилі для body
 @import 'sections';
+//  стилі для секцій
 @import 'nav';
+//  стилі для меню
+@import 'sliders';
+//  слайдери
 @import 'layout';
+// контейнер (максимальна ширина div , margin auto)
 @import 'modules';
+//  кнопки лінки стилі для img (ico)
 @import 'typography';
+// шрифти(заголовки та тексти) 
 @import 'media';
+//  media запити  responsive
 
