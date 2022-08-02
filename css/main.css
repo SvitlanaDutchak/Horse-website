@@ -64,11 +64,6 @@ body {
   color: #2C4058;
 }
 
-.header__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .container {
   max-width: 1200px;
   padding: 0 10px;
