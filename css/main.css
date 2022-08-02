@@ -146,6 +146,14 @@ body {
           align-items: center;
 }
 
+.questions__img {
+  width: 297px;
+  height: 371px;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+
 .questions__form {
   position: absolute;
   right: 15%;
@@ -191,6 +199,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .map {
@@ -294,6 +303,59 @@ body {
   color: #7D808A;
 }
 
+.slider .slick-arrow {
+  position: absolute;
+  bottom: 10px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  left: 50%;
+  z-index: 5;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider .slick-arrow.slick-prev::before {
+  content: url(../img/left.svg);
+}
+
+.slider .slick-arrow.slick-next::before {
+  content: url(../img/right.svg);
+}
+
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.5;
+}
+
+.slick-dots {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
+.slick-dots button {
+  cursor: pointer;
+  font-size: 0;
+  border-radius: 50%;
+  width: 11px;
+  height: 12px;
+  border: none;
+  background: #E1E1E1;
+}
+
+.slick-dots li.slick-active button {
+  background: #FFC700;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 10px;
@@ -365,6 +427,17 @@ body {
 
 .icon {
   color: #FFC700;
+}
+
+.img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
 }
 
 .form-title {
