@@ -71,12 +71,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 28px 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  left: 50%;
 }
 
 .header__list {
@@ -627,12 +632,6 @@ body {
   text-align: center;
   color: #0B0B0B;
   margin: 23px 0 26px;
-}
-
-@media (max-width: 1920px) {
-  .header {
-    height: 948px;
-  }
 }
 
 @media (max-width: 1000px) {
