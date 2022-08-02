@@ -1,8 +1,16 @@
+.slider {
+  margin-top: 40px;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+}
+
 .slider .slick-arrow {
   position: absolute;
-  bottom: 10px;
+  bottom: -65px;
   transform: translate(-50%, 0);
-  left: 50%;
   z-index: 5;
   font-size: 0;
   border: none;
@@ -11,12 +19,16 @@
 }
 
 .slider .slick-arrow.slick-prev {
+  left: 40%;
+
   &::before {
     content: url(../img/left.svg);
   }
 }
 
 .slider .slick-arrow.slick-next {
+  right: 40%;
+
   &::before {
     content: url(../img/right.svg);
   }
@@ -27,7 +39,10 @@
 }
 
 .slick-dots {
-  margin-top: 60px;
+  position: absolute;
+  bottom: -60px;
+  transform: translate(-50%, 0);
+  left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;

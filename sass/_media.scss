@@ -1,18 +1,6 @@
-@media (max-width: 320px) {
+@media (max-width: 1920px) {
     .header {
-        height: 564px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        height: 564px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        height: 539px;
+        height: 948px;
     }
 }
 
@@ -20,10 +8,80 @@
     .header {
         height: 564px;
     }
+
+    .about__row {
+        flex-wrap: wrap;
+    }
+
+    .map {
+        &__tree {
+            display: none;
+        }
+    }
+
+    .contacts {
+        left: 4%;
+    }
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 768px) {
     .header {
-        height: 948px;
+        height: 539px;
+    }
+
+    .why {
+        &__content {
+            gap: 12px;
+        }
+
+        &__card {
+            width: 20%;
+        }
+    }
+
+    .contacts {
+        padding: 40px;
+        width: 354px;
+        height: 425px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 564px;
+    }
+
+    .why {
+        &__content {
+            gap: 24px;
+        }
+
+        &__card {
+            width: 40%;
+        }
+    }
+
+}
+
+@media (max-width: 320px) {
+    .header {
+        height: 564px;
+    }
+
+    .why {
+        &__content {
+            gap: 44px;
+        }
+
+        &__card {
+            width: 100%;
+        }
+    }
+
+    .contacts {
+        padding: 10px;
+        width: 300px;
+        height: 375px;
     }
 }
