@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -58,7 +59,7 @@ a {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #2C4058;
@@ -68,6 +69,79 @@ body {
   width: 100%;
   height: 100vh;
   background-color: grey;
+}
+
+.questions {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/questions.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 140px 0 121px;
+}
+
+.questions__owerlay {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/Девочкаслошадью1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions__form {
+  position: absolute;
+  right: 15%;
+  width: 470px;
+  height: 547px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  -webkit-box-shadow: 0px 16px 51px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 16px 51px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+  padding: 60px 66px;
+  text-align: center;
+}
+
+.questions__checkbox {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.questions__cloud {
+  position: absolute;
+  height: 198px;
+  width: 100%;
+}
+
+.questions__cloud--top {
+  background: url(../img/облакtop.png);
+  top: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.questions__cloud--bottom {
+  background: url(../img/облакbottom.png);
+  bottom: 0px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer {
@@ -134,13 +208,94 @@ body {
   font-size: 15px;
   line-height: 18px;
   color: #F5F5F5;
+  cursor: pointer;
 }
 
-.title {
-  font-size: 50px;
-  color: coral;
+.input {
+  width: 330px;
+  height: 61px;
+  background: transparent;
+  border: 1px solid #8F8F8F;
+  border-radius: 5px;
+  padding: 20px 21px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 21px;
+  color: #A5A5A5;
+  margin-bottom: 20px;
 }
 
-.title--grey {
-  color: #2C4058;
+.btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9BCFFF), color-stop(0.01%, #FFF383), to(#FFC700));
+  background: linear-gradient(180deg, #9BCFFF 0%, #FFF383 0.01%, #FFC700 100%);
+  -webkit-box-shadow: 0px 4px 0px #C89C00;
+          box-shadow: 0px 4px 0px #C89C00;
+  border-radius: 10px;
+  border: none;
+  padding: 28px 69px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #6A5300;
+  cursor: pointer;
+}
+
+.checkbox {
+  cursor: pointer;
+  opacity: 0;
+  position: relative;
+}
+
+.checkbox:checked + label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -22px;
+  width: 4px;
+  height: 8px;
+  border: solid green;
+  border-width: 0 2.5px 2.5px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.form-title {
+  font-family: 'Philosopher';
+  font-size: 35px;
+  line-height: 35px;
+  color: #363434;
+  white-space: nowrap;
+}
+
+.text {
+  font-family: 'Roboto';
+  font-size: 15px;
+  line-height: 21px;
+  color: #7E7E7E;
+}
+
+.text--mr {
+  margin: 15px 30px;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-label {
+  position: relative;
+  margin-left: 5px;
+}
+
+.text-label::before {
+  content: "";
+  position: absolute;
+  padding: 7px;
+  border: 2px solid #FFC700;
+  border-radius: 2px;
+  left: -28px;
+  top: 1px;
 }

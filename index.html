@@ -21,6 +21,26 @@
 
 <body>
 
+
+  <section class="questions">
+    <div class="questions__cloud questions__cloud--top"></div>
+    <div class="questions__cloud questions__cloud--bottom"></div>
+    <div class="questions__owerlay">
+        <form class="questions__form">
+          <h3 class="form-title">Отвечаем на вопросы</h3>
+          <p class="text text--mr">Мы ответим на все ваши вопросы по телефону,
+            или вы можете записаться на бесплатное
+            пробное занятие</p>
+          <input type="text" name="name" placeholder="Ваше имя" class="input" required>
+          <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Ваш телефон" class="input" required>
+          <button type="submit" class="btn">Задать вопрос</button>
+          <div class="questions__checkbox">
+            <input type="checkbox" id="horns" name="horns" checked class="checkbox">
+            <label for="horns" class="text  text-label">Даю согласие на <span class="text-underline">обработку данных</span> </label>
+          </div>
+        </form>
+      </div>
+  </section>
   <footer class="footer">
     <div class="container">
       <div class="footer__row">

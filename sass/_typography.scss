@@ -1,7 +1,38 @@
-.title{
-    font-size: 50px;
-        color: coral;
-        &--grey{
-            color:$main-color;
+.form-title {
+    font-family: 'Philosopher';
+    font-size: 35px;
+    line-height: 35px;
+    color: #363434;
+    white-space: nowrap;
+}
+
+.text {
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 21px;
+    color: #7E7E7E;
+
+    &--mr {
+        margin: 15px 30px;
+    }
+
+    &-underline {
+        text-decoration: underline;
+    }
+
+    &-label {
+        position: relative;
+        margin-left: 5px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            padding: 7px;
+            border: 2px solid #FFC700;
+            border-radius: 2px;
+            left: -28px;
+            top: 1px;
+
         }
+    }
 }
