@@ -131,14 +131,14 @@ body {
 
 .questions__cloud--top {
   background: url(../img/облакtop.png);
-  top: 0px;
+  top: -1px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .questions__cloud--bottom {
   background: url(../img/облакbottom.png);
-  bottom: 0px;
+  bottom: -1px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
