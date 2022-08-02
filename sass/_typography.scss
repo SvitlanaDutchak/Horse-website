@@ -6,6 +6,30 @@
     white-space: nowrap;
 }
 
+.sub-title {
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 36px;
+    color: #000000;
+
+    &--line {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 26px;
+            height: 1px;
+            left: 0;
+            top: 55px;
+            background: #008139;
+        }
+
+    }
+}
+
 .text {
     font-family: 'Roboto';
     font-size: 15px;
