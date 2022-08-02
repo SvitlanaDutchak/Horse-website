@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Philosopher:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
@@ -20,19 +20,51 @@
 
 <body>
   <header class="header">
-    <div class="header__content container">
-      <div class="top__panel">
-        <div class="logo"><img src="img/logo.png" alt=""></div>
-        <div class="menu"></div>
-      </div>
-      <div class="content">
-        <h1>Окунитесь в мир лошадей вместе с нами</h1>
-        <span class="about__us"></span>
-        <a href="#">Записаться</a>
-      </div>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="img/logo.png" alt=""></a></div>
+      <nav class="navigation">
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#">Про нас</a></li>
+          <li class="header__item"><a class="header__link" href="#">Послуги та ціни</a></li>
+          <li class="header__item"><a class="header__link" href="#">Альбом</a></li>
+          <li class="header__item"><a class="header__link" href="#">Контакти</a></li>
+        </ul>
+        <div class="number"></div>
+      </nav>
     </div>
-    <img class="header__bottom-cloud" src="/img/header__background__clouds__bottom.png">
   </header>
+  <section class="hero">
+    <div class="hero__content">
+      <h1>Пориньте у світ коней разом з нами</h1>
+      <p class="about__us"></p>
+      <a href="#">Записатись</a>
+      <img class="house" src="/img/house.png" alt="house">
+      <img class="birds" src="/img/Чайки 1.png" alt="">
+      <img class="girl-with-horse" src="/img/horse.png" alt="">
+      <img class="" src="/img/horse__little.png" alt="">
+      <img class="trees" src="/img/Деревья слева 1.png" alt="">
+      <img class="left" src="/img/Куст слева 1.png" alt="">
+      <img class="" src="/img/header__background__clouds__bottom.png" alt="">
+      <img class="" src="" alt="">
+    </div>
+  </section>
+  <!-- <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="top-panel">
+          <div class="logo"><img src="img/logo.png" alt=""></div>
+          <div class="menu"></div>
+        </div>
+        <div class="content">
+          <h1>Пориньте у світ коней разом з нами</h1>
+          <span class="about__us"></span>
+          <a href="#">Записатись</a>
+        </div>
+      </div>
+      <img class="header__bottom-cloud" src="/img/header__background__clouds__bottom.png">
+    </div>
+  </header> -->
 
   <section class="about">
     <div class="container">
@@ -192,11 +224,12 @@
     </div>
   </footer>
 </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYiRptjU3wXu04krXQVOlGUqt7ah4vwIk&callback=initMap"></script>
-  <script src="js/map.js"></script>
-  <script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYiRptjU3wXu04krXQVOlGUqt7ah4vwIk&callback=initMap"></script>
+<script src="js/map.js"></script>
+<script src="js/script.js"></script>
+
 </html>
