@@ -1,3 +1,32 @@
+.hero-title {
+    font-family: 'Philosopher';
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 107%;
+    color: $title-black-color;
+}
+
+.hero-us {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #646464;
+}
+
+.hero-us>span {
+    font-weight: bold;
+}
+
+.button-sign-up {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 32px;
+}
+
 .form-title {
     font-family: 'Philosopher';
     font-size: 35px;

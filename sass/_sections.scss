@@ -1,14 +1,17 @@
 .header {
-  display: flex;
-  padding: 28px 0;
-  justify-content: space-around;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  align-items: center;
-  transform: translate(-50%, 0);
-  left: 50%;
+    display: flex;
+    padding: 28px 0;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    transform: translate(-50%, 0);
+    left: 50%;
 
+    &__navigation {
+        display: flex;
+    }
 
     &__list {
         display: flex;
@@ -16,49 +19,104 @@
     }
 }
 
-.hero {
-    background-image: url(/img/header__background.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
-    z-index: 0;
+.telephone-information {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+
+    &__notate {
+        margin-left: 20px;
+        margin-top: 8px;
+    }
 }
 
-.left {
+.hero {
+    background-image: url(/img/hero-background.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 948px;
+    overflow: hidden;
+
+    &__content {
+        &__info {
+            position: absolute;
+            top: 160px;
+            left: 15%;
+        }
+    }
+}
+
+.line {
+    height: 1px;
+    width: 26px;
+    margin-right: 20px;
+    margin-top: 17px;
+}
+
+.hero-text {
+    display: flex;
+    margin-top: 60px;
+
+}
+
+
+.barn {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 340px;
+    bottom: 16.87%;
+    z-index: 2;
+}
+
+.birds {
+    position: absolute;
+    right: 12.45%;
+    top: 16.56%;
+    z-index: 1;
+}
+
+.girl-on-horse-right {
+    position: absolute;
+    right: 17.5%;
+    top: 19%;
+    z-index: 3;
+}
+
+.girl-on-horse-left {
+    position: absolute;
+    left: 720px;
+    top: 560px;
     z-index: 2;
 }
 
 .trees {
     position: absolute;
-    left: 50px;
-    bottom: 0;
+    left: 0;
+    top: 460px;
     z-index: 1;
 }
 
-.house {
+.bush-left {
     position: absolute;
-    left: 170px;
-    bottom: 0;
-    z-index: 1;
+    left: 0;
+    bottom: 65px;
+    z-index: 4;
 }
 
-.birds {
+.bush-right {
     position: absolute;
-    right: 10%;
-    top: 150px;
-    z-index: 1;
+    right: 0;
+    bottom: 75px;
+    z-index: 4;
 }
 
-.girl-with-horse {
+.clouds-bottom {
     position: absolute;
-    right: 300px;
-    bottom: 0px;
-    z-index: 1;
-    width: 10%;
+    bottom: 90px;
+    left: 0;
+    height: 170px;
+
+    z-index: 3;
 }
 
 .about {
