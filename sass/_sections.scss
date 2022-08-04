@@ -282,6 +282,20 @@
         gap: 13px;
         align-self: flex-end;
     }
+    &__icon {
+        width: 32px;
+        height: 32px;
+        background-color: #FFC700;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        &:hover {
+            background-color: #C89C00;
+        }
+    }
 }
 
 
