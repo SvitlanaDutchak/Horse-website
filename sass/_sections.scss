@@ -175,14 +175,16 @@
     &__owerlay {
         width: 100%;
         height: 100vh;
-        background: url(../img/Девочкаслошадью1.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         display: flex;
         align-items: center;
 
 
+    }
+
+    &__large-img {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
     }
 
     &__img {
@@ -231,7 +233,7 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            z-index: 1;
+            z-index: 3;
         }
     }
 }
