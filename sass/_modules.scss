@@ -50,6 +50,12 @@
   line-height: 21px;
   color: #A5A5A5;
   margin-bottom: 20px;
+
+  &:focus {
+    border: 1px solid #FF5C00;
+    border-radius: 5px;
+    outline: none;
+  }
 }
 
 .btn {
