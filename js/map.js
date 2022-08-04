@@ -149,7 +149,7 @@ const map = new google.maps.Map(document.getElementById("map"), {
     lat: 50.45768752365884,
     lng: 30.514808641267884
   },
-  zoom: 12,
+  zoom: 11,
   styles: mapStyles,
   disableDefaultUI: true
 });

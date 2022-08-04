@@ -1,8 +1,21 @@
+@media (max-width: 1024px) {
 
-@media (max-width: 1000px) {
+    .about {
+        &__text {
+            position: absolute;
+            width: 98%;
+            left: 1%;
 
-    .about__row {
-        flex-wrap: wrap;
+        }
+
+        &__content {
+            width: 100%;
+        }
+
+        &__col {
+            column-gap: 8px;
+        }
+
     }
 
     .map {
@@ -17,7 +30,22 @@
 }
 
 @media (max-width: 768px) {
+
+    .text {
+
+        &--dark {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &--green {
+            font-size: 27px;
+        }
+    }
+
     .why {
+
+
         &__content {
             gap: 12px;
         }
@@ -27,18 +55,113 @@
         }
     }
 
+    .about {
+
+        &__row {
+            margin-top: 40px;
+        }
+
+
+        &__content {
+            width: 100%;
+        }
+    }
+
+    .questions {
+        height: 160vh;
+
+        &__img {
+            display: none;
+        }
+
+        &__owerlay {
+            align-items: flex-start;
+            height: 140vh;
+        }
+
+        &__large-img {
+            transform: translate(-50%, 0px);
+            left: 50%;
+        }
+
+        &__form {
+            transform: translate(50%, 0px);
+            right: 50%;
+            margin-top: 70px;
+
+        }
+    }
+
     .contacts {
         padding: 40px;
         width: 354px;
         height: 425px;
     }
 
+    .call-button {
+        padding: 16px 28px;
+    }
+
+    .footer {
+        height: 160px;
+
+        &__content {
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+    .text {
+        font-size: 13px;
+
+        &--mr {
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        &--dark,
+        &--green {
+            text-align: center;
+        }
+    }
+
+    .btn {
+        padding: 25px 52px;
+        font-size: 13px;
+    }
+
+    .form-title {
+        font-size: 27px;
+    }
+
+    .about {
+        &__content {
+            width: 100%;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__col {
+            row-gap: 30px;
+            column-gap: 25px;
+        }
+
+        &__text {
+            position: static;
+        }
+    }
 
 
     .why {
+
+        margin-top: 70px;
+
         &__content {
             gap: 24px;
         }
@@ -48,9 +171,66 @@
         }
     }
 
+    .contacts {
+        width: 319px;
+        transform: translate(-50%, 0px);
+        left: 50%;
+        bottom: -20px;
+    }
+
+    .questions {
+        &__form {
+            width: 400px;
+        }
+
+        &__large-img {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        height: 390px;
+        margin-top: 147px;
+
+        &__content {
+            gap: 30px;
+
+            &-col {
+                flex-direction: column;
+            }
+        }
+
+
+
+        &__row {
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+
+}
+
+@media (max-width: 420px) { 
+    .questions__form {
+        width: 97%;
+        padding: 26px;
+        height: 500px;
+    }
+
+    .form-title {
+        font-size: 22px;
+        line-height: 14px;
+        white-space: normal;
+    }
+    .btn {
+        padding: 17px 8px;
+    }
 }
 
 @media (max-width: 320px) {
+
+
 
     .why {
         &__content {
@@ -62,9 +242,27 @@
         }
     }
 
+    .about {
+        &__card {
+            width: 100%;
+            text-align: center;
+
+        }
+    }
+
     .contacts {
-        padding: 10px;
-        width: 300px;
-        height: 375px;
+        width: 98%;
+        padding: 25px;
+        height: 408px;
+    }
+
+    .footer {
+        height: 541px;
+
+        &__content {
+            gap: 30px;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 }
