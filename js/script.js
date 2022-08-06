@@ -3,9 +3,10 @@ $(function(){
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 10,
+    slidesToShow: 1,
     autoplay: false,
     slidesToScroll: 1,
+    cssEase: 'linear',
     responsive: [{
         breakpoint: 1000,
         settings: {
@@ -22,6 +23,32 @@ $(function(){
       }
     ]
   });
-  
-
 })
+
+const callButton = document.getElementsByClassName('call-button')[0];
+const modalWindow = document.getElementsByClassName('modal')[0];
+const closeButton = document.getElementsByClassName('close-btn')[0];
+const orderCall = document.getElementById('order-call');
+
+callButton.addEventListener('click', function() {
+  modalWindow.style.display = "block";
+  document.body.style.overflow = 'hidden';
+}); 
+
+function closeModal()  {
+  modalWindow.style.display = "none";
+  document.body.style.overflow = '';
+};
+
+closeButton.addEventListener('click', closeModal);
+orderCall.addEventListener('click', closeModal);
+
+
+const modalImage = document.getElementsByClassName('slider__item')[0];
+
+
+modalImage.addEventListener('click', function() {
+  document.body.classList.toggle("look-scroll")
+  modalImage.classList.toggle("is-active");
+}); 
+
