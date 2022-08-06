@@ -158,8 +158,8 @@ const marker = "img/pin.svg";
 
 new google.maps.Marker({
   position: {
-    lat: 50.472239709890815,
-    lng: 30.631544826103312
+    lat: 50.46776202249059,
+    lng: 30.58675795842144
   },
   map,
   title: "OUR LOCATION",

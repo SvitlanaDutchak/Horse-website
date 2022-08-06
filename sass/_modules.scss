@@ -51,6 +51,11 @@
   color: #A5A5A5;
   margin-bottom: 20px;
 
+  &--light {
+    border-color: $secondary-color;
+    color: $secondary-color;
+  }
+
   &:focus {
     border: 1px solid #FF5C00;
     border-radius: 5px;
@@ -75,11 +80,11 @@
 }
 
 .checkbox {
-  cursor: pointer;
   opacity: 0;
   position: relative;
-
-  &:checked+label:after {
+  cursor: pointer;
+  
+  &:checked + label:after {
     content: '';
     position: absolute;
     top: 3px;
@@ -105,4 +110,15 @@
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+
+.close-btn {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  padding: 14px 18px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
 }

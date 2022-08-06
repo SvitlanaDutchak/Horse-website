@@ -33,6 +33,12 @@
     line-height: 35px;
     color: #363434;
     white-space: nowrap;
+
+    &--light {
+        font-size: 38px;
+        letter-spacing: 5px;
+        color: $secondary-color;
+    }
 }
 
 .sub-title {
@@ -66,6 +72,13 @@
     font-size: 15px;
     line-height: 21px;
     color: #7E7E7E;
+
+    &--light {
+        color: $secondary-color;
+        font-size: 16px;
+        margin: 30px 0;
+        letter-spacing: 3px;
+    }
 
     &--green {
         font-family: 'Philosopher';
