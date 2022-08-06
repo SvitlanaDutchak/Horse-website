@@ -44,11 +44,16 @@ closeButton.addEventListener('click', closeModal);
 orderCall.addEventListener('click', closeModal);
 
 
-const modalImage = document.getElementsByClassName('slider__item')[0];
+const modalImage = document.getElementsByClassName('slider__item');
 
 
-modalImage.addEventListener('click', function() {
-  document.body.classList.toggle("look-scroll")
-  modalImage.classList.toggle("is-active");
-}); 
+
+for (let item of modalImage ) {
+  item.addEventListener('click', function() {
+    document.body.classList.toggle("look-scroll")
+    item.classList.toggle("is-active");
+  }); 
+}
+
+
 
