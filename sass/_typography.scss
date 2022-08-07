@@ -1,17 +1,66 @@
-.hero-title {
-    font-family: 'Philosopher';
-    font-weight: 700;
-    font-size: 57px;
-    line-height: 107%;
-    color: $title-black-color;
+.burger-menu-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #202020;
 }
 
-.hero-us {
+.header__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    text-align: right;
+    text-transform: uppercase;
+    color: #202020;
+}
+
+.dark-page-list-style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    white-space: nowrap;
+    text-decoration-line: underline;
+}
+
+.telephone-information-phone {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    text-align: right;
+    color: #202020;
+}
+
+.telephone-information-info {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: #7D808A;
+}
+
+.hero-title-text {
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+}
+
+.hero-us-text {
     font-family: 'Alegreya Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 140%;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
     color: #646464;
 }
 
@@ -19,12 +68,14 @@
     font-weight: bold;
 }
 
-.button-sign-up {
+.sign-up>span {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 32px;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
 }
 
 .form-title {

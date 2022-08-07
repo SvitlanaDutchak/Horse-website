@@ -20,53 +20,63 @@
 </head>
 
 <body>
-  <!-- <header>
-    <div class="block"></div>
-    <div class="container">
-      <div class="header">
-        <div class="header__logo">
-          <a href="#"><img src="img/logo1.svg" alt=""></a>
+  <header class="container header">
+    <div class="dark-page display-none">
+      <div class="close-window"><img src="/img/window-close.png" alt="close wwindow"></div>
+    </div>
+    <div class="logo"><a href="#"><img class="header__logo" src="img/logo1.svg" alt="logo"></a></div>
+    <nav class="header__navigation">
+      <ul id="header-ul-menu" class="ul-display-none">
+        <li class="header__item"><a class="header__link" href="#">Про нас</a></li>
+        <li class="header__item"><a class="header__link" href="#">Послуги та ціни</a></li>
+        <li class="header__item"><a class="header__link" href="#">Альбом</a></li>
+        <li class="header__item"><a class="header__link" href="#">Контакти</a></li>
+      </ul>
+
+      <div class="menu-button">
+        <div class="burger-icon">
+          <div class="burger-line"></div>
+          <div class="burger-line burger-center-line"></div>
+          <div class="burger-line"></div>
         </div>
-        <nav class="header__navigation">
-          <ul class="header__list">
-            <li class="header__item"><a class="header__link" href="#">Про нас</a></li>
-            <li class="header__item"><a class="header__link" href="#">Послуги та ціни</a></li>
-            <li class="header__item"><a class="header__link" href="#">Альбом</a></li>
-            <li class="header__item"><a class="header__link" href="#">Контакти</a></li>
-          </ul>
-          <div class="telephone-information">
-            <a class="telephone-information__phone" href="tel:+380123456789">
-              <img class="phone-icon" src="/img/phone.png" alt="phone icon">
-              +38(012) 34-56-789
-            </a>
-            <span class="telephone-information__notate">Щоденно 9:00 - 22:00</span>
-          </div>
+        <span class="burger-menu-text">menu</span>
       </div>
-      </nav>
-    </div>
-    </div>
-  </header> -->
-  <!-- <section class="hero">
-    <div class="hero__content">
-      <div class="hero__content__info">
-        <h1 class="hero-title">Пориньте у світ<br>коней разом з нами</h1>
-        <div class="hero-text">
-          <img class="line" src="/img/line.png" alt="line">
-          <p class="hero-us">Уроки верхової їзди, фотосесії та заходи<br>у приватному кінному клубі <span>м.Київ</span>
+
+      <div class="telephone-information">
+        <a class="telephone-information-phone" href="tel:+380123456789">
+          <img class="phone-icon" src="/img/phone.png" alt="phone icon">
+          +38(012) 34-56-789
+        </a>
+        <span class="telephone-information-info">Щоденно 9:00 - 22:00</span>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero__content container">
+      <div class="hero-text-block">
+        <h1 class="hero-title hero-title-text">Пориньте у світ<br>коней разом з нами</h1>
+        <div class="line-with-hero-us"><img class="line" src="/img/line.png" alt="line">
+          <p class="hero-us hero-us-text">Уроки верхової їзди, фотосесії та заходи<br>у приватному кінному
+            клубі <span>м.Київ</span>
           </p>
         </div>
+        <a class="sign-up" href="https://github.com/SvitlanaDutchak/Horse-website"><span>записатись</span></a>
       </div>
-      <a class="sign-up button-sign-up" href="https://github.com/SvitlanaDutchak/Horse-website">Записатись</a>
+
+      <!-- <button onclick="document.location='page/new.html'">Переход по ссылке</button> -->
+
       <img class="girl-on-horse-right" src="/img/girl-on-horse-right.png" alt="girl on a horse">
       <img class="girl-on-horse-left" src="/img/girl-on-horse-left.png" alt="girl on a horse">
       <img class="barn" src="/img/barn.png" alt="barn">
       <img class="trees" src="/img/trees.png" alt="trees">
       <img class="birds" src="/img/birds.png" alt="birds">
       <img class="bush-right" src="/img/bush-right.png" alt="bush">
-      <img class="bush-left" src="/img/bush-left.png" alt="bush">
+      <img id="bush-left" class="bush-left z-index4" src="/img/bush-left.png" alt="bush">
       <img class="clouds-bottom" src="/img/clouds-bottom.png" alt="clouds-bottom">
     </div>
-  </section> -->
+  </section>
 
 
   <section class="about">
@@ -100,7 +110,8 @@
             </div>
 
           </div>
-          <p class="text about__text">Заняття проводяться індивідуально і в групах, вартість також залежатиме від ваших навичок і
+          <p class="text about__text">Заняття проводяться індивідуально і в групах, вартість також залежатиме від ваших
+            навичок і
             умінь. Більш вигідні умови
             передбачені для регулярних занять при купівлі абонементів.
             Для тих, хто хоче відточити свою майстерність, розроблені програми зі спеціалізації (конкур, виїздка та
@@ -203,8 +214,8 @@
           </div>
           <img src="img/10.png" alt="img" class="slider__image img">
         </div>
-        
-        
+
+
       </div>
       <div class="slider__card">
         <div class="slider__item">
@@ -267,8 +278,8 @@
           </div>
           <img src="img/10.png" alt="img" class="slider__image img">
         </div>
-        
-        
+
+
       </div>
       <div class="slider__card">
         <div class="slider__item">
@@ -331,8 +342,8 @@
           </div>
           <img src="img/10.png" alt="img" class="slider__image img">
         </div>
-        
-        
+
+
       </div>
     </div>
   </section>
@@ -372,8 +383,10 @@
       <div class="contacts__content">
         <p class="text"> <span class="icon"> <i class="fa-solid fa-location-dot"></i></span> вул. Милютенка, 25, офіс 65
         </p>
-        <a href="tel: +380000000000" class="text"> <span class="icon"><i class="fa-solid fa-phone"></i></span> +380 00 000 00 00</a>
-        <a href="mailto:mail@somemail.com" class="text"> <span class="icon"><i class="fa-solid fa-envelope"></i></span> mail@somemail.com</a>
+        <a href="tel: +380000000000" class="text"> <span class="icon"><i class="fa-solid fa-phone"></i></span> +380 00
+          000 00 00</a>
+        <a href="mailto:mail@somemail.com" class="text"> <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          mail@somemail.com</a>
         <p class="text"> <span class="icon"> <i class="fa-solid fa-clock"></i></span>Пн-Пт: 10:00 - 19:00
           Сб: 10:00 - 17:00
           Нд: вихідний</p>
@@ -413,13 +426,13 @@
             <h3 class="form-title form-title--light">Замовити дзвінок</h3>
             <p class="text text--light">Залиште ваші дані і ми вам передзвонимо!</p>
             <input type="text" name="name" placeholder="Ваше ім'я" class="input input--light" required>
-            <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Ваш телефон" class="input input--light"
-              required>
+            <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Ваш телефон"
+              class="input input--light" required>
             <button type="submit" class="btn btn--media" id="order-call">Замовити дзвінок</button>
           </form>
         </div>
-      </div>   
-  </div>
+      </div>
+    </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -427,6 +440,7 @@
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYiRptjU3wXu04krXQVOlGUqt7ah4vwIk&callback=initMap"></script>
   <script src="js/map.js"></script>
+  <script src="js/burger-menu.js"></script>
   <script src="js/script.js"></script>
 </body>
 

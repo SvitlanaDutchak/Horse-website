@@ -1,121 +1,184 @@
-.header {
-    display: flex;
-    padding: 28px 0;
-    justify-content: space-around;
-    position: absolute;
+.section {
+    height: 100px;
     width: 100%;
-    z-index: 1;
-    align-items: center;
+}
+
+.display-none {
+    display: none;
+}
+
+.ul-display-none {
+    display: none;
+}
+
+
+.header {
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
     transform: translate(-50%, 0);
     left: 50%;
+    top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
 
-    &__navigation {
-        display: flex;
-    }
+.overflow {
+    overflow: hidden;
+}
 
-    &__list {
-        display: flex;
-        gap: 30px;
-    }
+.dark-page-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 7;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 50px;
+}
+
+.dark-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.897);
+    position: absolute;
+    z-index: 0;
+    top: -15px;
+    left: 0;
+}
+
+.header__navigation {
+    display: flex;
+}
+
+.header__logo {
+    height: 30px;
+    width: 90px;
 }
 
 .telephone-information {
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-
-    &__notate {
-        margin-left: 20px;
-        margin-top: 8px;
-    }
+    display: none;
 }
 
 .hero {
     background-image: url(/img/hero-background.png);
-    background-size: auto 100%;
+    height: 560px;
+    background-size: auto 120%;
+    background-position: left -280px top -6px;
     background-repeat: no-repeat;
     position: relative;
-    height: 948px;
     overflow: hidden;
+    z-index: 2;
+}
 
-    &__content {
-        &__info {
-            position: absolute;
-            top: 160px;
-            left: 15%;
-        }
-    }
+.hero-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    top: 140px;
+}
+
+.hero-title {
+    width: 320px;
+    height: 55px;
+    margin-bottom: 25px;
+}
+
+.line-with-hero-us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
 }
 
 .line {
     height: 1px;
-    width: 26px;
-    margin-right: 20px;
-    margin-top: 17px;
+    width: 15px;
+    margin-bottom: 15px;
 }
 
-.hero-text {
-    display: flex;
-    margin-top: 60px;
-
+.hero-us {
+    width: 320px;
+    height: 35px;
 }
 
+.hero-us-text {
+    font-size: 13px;
+    line-height: 18px;
+}
 
 .barn {
     position: absolute;
-    left: 340px;
-    bottom: 16.87%;
-    z-index: 2;
+    left: -40px;
+    bottom: 25px;
+    z-index: 1;
+    height: 80px;
+    width: 180px;
 }
 
 .birds {
     position: absolute;
-    right: 12.45%;
-    top: 16.56%;
+    right: 210px;
+    top: 90px;
     z-index: 1;
+    height: 24px;
+    width: 75px;
+}
+
+.girl-on-horse-left {
+    display: none;
 }
 
 .girl-on-horse-right {
     position: absolute;
-    right: 17.5%;
-    top: 19%;
-    z-index: 3;
-}
-
-.girl-on-horse-left {
-    position: absolute;
-    left: 720px;
-    top: 560px;
-    z-index: 2;
+    right: 35px;
+    bottom: 15px;
+    z-index: 0;
+    height: 190px;
+    width: 190px;
 }
 
 .trees {
     position: absolute;
-    left: 0;
-    top: 460px;
-    z-index: 1;
+    left: -85px;
+    bottom: 40px;
+    z-index: 2;
+    height: 108px;
+    width: 145px;
 }
 
 .bush-left {
     position: absolute;
     left: 0;
-    bottom: 65px;
+    bottom: 10px;
+    height: 90px;
+    width: 45px;
     z-index: 4;
 }
 
 .bush-right {
     position: absolute;
     right: 0;
-    bottom: 75px;
+    bottom: 8px;
     z-index: 4;
+    height: 130px;
+    width: 35px;
 }
 
 .clouds-bottom {
     position: absolute;
-    bottom: 90px;
+    bottom: 0px;
     left: 0;
-    height: 170px;
-
+    height: 50px;
     z-index: 3;
 }
 
