@@ -164,6 +164,8 @@
     &-label {
         position: relative;
         margin-left: 5px;
+        z-index: 10;
+        cursor: pointer;
 
         &::before {
             content: "";

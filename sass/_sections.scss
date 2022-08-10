@@ -22,6 +22,15 @@
     top: 15px;
     display: flex;
     justify-content: space-between;
+
+    &__navigation {
+        display: flex;
+    }
+    
+    &__logo {
+        height: 30px;
+        width: 90px;
+    }
 }
 
 .overflow {
@@ -50,14 +59,7 @@
     left: 0;
 }
 
-.header__navigation {
-    display: flex;
-}
 
-.header__logo {
-    height: 30px;
-    width: 90px;
-}
 
 .telephone-information {
     display: none;
