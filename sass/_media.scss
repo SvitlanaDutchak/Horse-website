@@ -1,5 +1,31 @@
 @media (max-width: 1024px) {
 
+    .slick-dots {
+        background: #EAEAEA;
+        box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.17);
+        border-radius: 10px;
+        gap: 30px;
+    }
+
+    .slick-dots button {
+        display: none;
+    }
+
+    .slick-dots li.slick-active button {
+        display: block;
+        background: linear-gradient(180deg, #9BCFFF 0%, #FFC700 0.01%, #FF9900 100%);
+        border-radius: 10px;
+        width: 20px;
+    }
+
+    .slider .slick-arrow.slick-next {
+        right: 35%;
+    }
+
+    .slider .slick-arrow.slick-prev {
+        left: 39%;
+    }
+
     .about {
         &__text {
             position: absolute;
@@ -31,6 +57,10 @@
 }
 
 @media (max-width: 768px) {
+
+    .slider .slick-arrow.slick-next {
+        right: 29%;
+    }
 
     .text {
 
@@ -103,6 +133,16 @@
         padding: 16px 28px;
     }
 
+    .slider {
+        &__none {
+            display: none;
+        }
+
+        &__card {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
     .footer {
         height: 160px;
 
@@ -116,6 +156,15 @@
 }
 
 @media (max-width: 576px) {
+
+    .slider .slick-arrow.slick-next {
+        right: 22%;
+    }
+
+    .slider .slick-arrow.slick-prev {
+        left: 30%;
+    }
+
     .text {
         font-size: 13px;
 
@@ -215,6 +264,11 @@
 }
 
 @media (max-width: 420px) {
+
+    .slider .slick-arrow.slick-next {
+        right: 15%;
+    }
+
     .questions__form {
         width: 97%;
         padding: 26px;
@@ -234,9 +288,16 @@
             width: 100%;
         }
     }
+
 }
 
 @media (max-width: 320px) {
+    .slider .slick-arrow.slick-prev {
+        left: 25%;
+    }
+    .slider .slick-arrow.slick-next {
+        right: 7%;
+    }
 
     .questions {
         height: 813px;
@@ -249,6 +310,13 @@
             height: 425px;
             margin-top: 40px;
         }
+    }
+
+    .slider {
+        &__card {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
     }
 
 

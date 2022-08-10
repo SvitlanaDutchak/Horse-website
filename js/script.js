@@ -7,21 +7,6 @@ $(function(){
     autoplay: false,
     slidesToScroll: 1,
     cssEase: 'linear',
-    responsive: [{
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          arrows: false
-        }
-      },
-      {
-        breakpoint: 550,
-        settings: {
-          slidesToShow: 1,
-          arrows: false
-        }
-      }
-    ]
   });
 })
 
