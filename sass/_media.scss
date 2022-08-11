@@ -431,6 +431,88 @@
         width: 767px;
         height: 85px;
     }
+
+    .club-directions {
+        background-image: url(/img/backgrounds/club-directions/480px.png);
+        background-position: bottom 0 center;
+        background-size: 768px auto;
+
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__section-title {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 27px;
+            line-height: 22px;
+        }
+
+        &__cards {
+            row-gap: 40px;
+            column-gap: 20px;
+            padding-top: 60px;
+            grid-template-columns: repeat(2, minmax(225px, 320px));
+        }
+
+        &__item:nth-child(odd) {
+            justify-self: end;
+        }
+
+        &__item {
+            width: 100%;
+            height: 290px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        &__button {
+            margin-top: 30px;
+            margin-bottom: 120px;
+        }
+
+        &__img-girl {
+            position: absolute;
+            height: 215px;
+            bottom: 10px;
+            left: -25px;
+        }
+
+        &__img-boy {
+            position: absolute;
+            height: 215px;
+            bottom: 10px;
+            right: -50px;
+        }
+
+
+        &__clouds {
+            height: 110px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .direction-card-title {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .direction-card-image {
+        width: 200px;
+        height: 130px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+    }
 }
 
 @media (min-width: 768px) {
@@ -615,6 +697,85 @@
         height: 135px;
         width: 1000px;
     }
+
+    .club-directions {
+        background-image: url(/img/backgrounds/club-directions/768px.png);
+        background-position: bottom 0 center;
+        background-size: 1000px auto;
+
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__section-title {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: 27px;
+            line-height: 36px;
+        }
+
+        &__cards {
+            row-gap: 45px;
+            column-gap: 20px;
+            padding-top: 75px;
+            width: 100%;
+            grid-template-columns: repeat(2, minmax(350px, 370px));
+        }
+
+        &__item {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        &__button {
+            margin-top: 40px;
+            margin-bottom: 200px;
+        }
+
+        &__img-girl {
+            position: absolute;
+            height: 275px;
+            bottom: 20px;
+            left: 10px;
+        }
+
+        &__img-boy {
+            position: absolute;
+            height: 270px;
+            bottom: 25px;
+            right: -15px;
+        }
+
+
+        &__clouds {
+            height: 170px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .direction-card-title {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .direction-card-image {
+        width: 305px;
+        height: 180px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+    }
 }
 
 @media (min-width: 1000px) {
@@ -761,6 +922,101 @@
         height: 150px;
         width: 1920px;
     }
+
+    .club-directions {
+        background-image: url(/img/backgrounds/club-directions/1000px.png);
+        background-position: bottom 1px center;
+        background-size: cover;
+
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__section-title {
+            font-size: 30px;
+            line-height: 36px;
+            margin-top: 60px;
+        }
+
+        &__cards {
+            row-gap: 0px;
+            column-gap: 20px;
+            padding-top: 80px;
+            width: 95%;
+            grid-template-columns: repeat(3, minmax(300px, 370px));
+        }
+
+        &__item:nth-child(3n+1) {
+            justify-self: center;
+        }
+
+        &__item:nth-child(3n+2) {
+            justify-self: center;
+        }
+
+        &__item:nth-child(3n+3) {
+            justify-self: center;
+        }
+
+        &__item:nth-child(2n+2) {
+            height: 340px;
+        }
+
+        &__item {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        &__item:nth-child(6n+4),
+        &__item:nth-child(6n+5),
+        &__item:nth-child(6n+6) {
+            align-self: end;
+        }
+
+        &__button {
+            margin-top: 40px;
+            margin-bottom: 240px;
+        }
+
+        &__img-girl {
+            position: absolute;
+            height: 350px;
+            bottom: 20px;
+            left: 10px;
+        }
+
+        &__img-boy {
+            position: absolute;
+            height: 340px;
+            bottom: 25px;
+            right: -5px;
+        }
+
+
+        &__clouds {
+            height: 170px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .direction-card-image {
+        width: 250px;
+        height: 180px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+    }
 }
 
 @media (min-width: 1920px) {
@@ -880,5 +1136,96 @@
         left: 0px;
         height: 245px;
         width: 100vw;
+    }
+
+    .club-directions {
+        background-image: url(/img/backgrounds/club-directions/1920px.png);
+        background-position: bottom 1px center;
+        background-size: cover;
+
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__section-title {
+            font-size: 40px;
+            line-height: 36px;
+        }
+
+        &__section-sub-title {
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+        &__cards {
+            row-gap: 0px;
+            column-gap: 30px;
+            padding-top: 80px;
+            width: 95%;
+            grid-template-columns: repeat(3, minmax(300px, 370px));
+        }
+
+
+        &__item {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        &__item:nth-child(2n+2) {
+            height: 475px;
+        }
+
+        &__button {
+            margin-top: 40px;
+            margin-bottom: 240px;
+        }
+
+        &__img-girl {
+            height: 530px;
+            bottom: 30px;
+            left: 155px;
+        }
+
+        &__img-boy {
+            height: 535px;
+            bottom: 20px;
+            right: 80px;
+        }
+
+
+        &__clouds {
+            bottom: 0;
+            width: 100%;
+            max-height: 170px;
+        }
+    }
+
+    .direction-card-image {
+        width: 320px;
+        height: 220px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+    }
+
+    .direction-card-title {
+        font-size: 23px;
+        line-height: 27px;
+        width: 250px;
+    }
+
+    .direction-card-description {
+        font-size: 16px;
+        line-height: 21px;
     }
 }
