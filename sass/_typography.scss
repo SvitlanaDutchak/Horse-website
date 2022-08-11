@@ -78,6 +78,47 @@
     text-transform: uppercase;
 }
 
+.section-title {
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #363434;
+}
+
+.section-sub-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #363434;
+}
+
+.direction-card-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: #363434;
+    display: inline-block;
+    text-align: center;
+}
+
+.direction-card-description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #7E7E7E;
+}
+
 .form-title {
     font-family: 'Philosopher';
     font-size: 35px;
