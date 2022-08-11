@@ -8,7 +8,18 @@ $(function(){
     slidesToScroll: 1,
     cssEase: 'linear',
   });
+  $('.horse-slider').slick({
+    dots: true,
+    infinite: false,
+    arrows:true,
+    speed: 300,
+    slidesToShow: 3,
+    autoplay: false,
+    slidesToScroll: 1,
+    cssEase: 'linear',
+  });
 })
+
 
 const callButton = document.getElementsByClassName('call-button')[0];
 const modalWindow = document.getElementsByClassName('modal')[0];
@@ -28,10 +39,7 @@ function closeModal()  {
 closeButton.addEventListener('click', closeModal);
 orderCall.addEventListener('click', closeModal);
 
-
 const modalImage = document.getElementsByClassName('slider__item');
-
-
 
 for (let item of modalImage ) {
   item.addEventListener('click', function() {
