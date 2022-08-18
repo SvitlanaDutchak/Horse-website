@@ -8,16 +8,16 @@ $(function(){
     slidesToScroll: 1,
     cssEase: 'linear',
   });
-  $('.horse-slider').slick({
-    dots: true,
-    infinite: false,
-    arrows:true,
-    speed: 300,
-    slidesToShow: 3,
-    autoplay: false,
-    slidesToScroll: 1,
-    cssEase: 'linear',
-  });
+  // $('.horse-slider').slick({
+  //   dots: true,
+  //   infinite: false,
+  //   arrows:true,
+  //   speed: 300,
+  //   slidesToShow: 3,
+  //   autoplay: false,
+  //   slidesToScroll: 1,
+  //   cssEase: 'linear',
+  // });
 })
 
 

@@ -25,3 +25,16 @@ close.addEventListener("click", () => {
     headerList.classList.remove("dark-page-list");
     body.classList.remove("overflow");
 })
+
+headerListLi.forEach(elem => {
+    elem.addEventListener("click", () => {
+        headerListLi.forEach(elem => {
+            elem.classList.remove("dark-page-list-style");
+        });
+        headerList.classList.add("header__list");
+        headerList.classList.add("ul-display-none");
+        darkPage.classList.add("display-none");
+        headerList.classList.remove("dark-page-list");
+        body.classList.remove("overflow");
+    })
+})
