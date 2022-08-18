@@ -82,7 +82,7 @@
   opacity: 0.5;
 }
 
-.slick-dots {
+.slider .slick-dots {
   position: absolute;
   bottom: -60px;
   transform: translate(-50%, 0);
@@ -94,7 +94,7 @@
 
 }
 
-.slick-dots button {
+.slider .slick-dots button {
   cursor: pointer;
   font-size: 0;
   border-radius: 50%;
@@ -104,6 +104,112 @@
   background: #E1E1E1;
 }
 
-.slick-dots li.slick-active button {
+.slider .slick-dots li.slick-active button {
   background: #FFC700;
+}
+
+
+
+/* Слайд */
+.our-horses .slick-slide {
+  padding: 25px 10px 25px 10px;
+}
+
+.our-horses .slick-slide>.our-horses__card-content {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* Лента слайдов */
+.response__slider .slick-track {
+  display: flex;
+  position: relative;
+  left: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Слайд */
+.response__slider .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Стрелка */
+.our-horses .slick-arrow,
+.response__slider .slick-arrow {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 0;
+  border: none;
+  background: linear-gradient(180deg, #9BCFFF 0%, #FFF8B6 0.01%, #FFC700 100%);
+  box-shadow: 0px 1px 0px #C89C00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Стрелка влево */
+.our-horses .slick-arrow.slick-prev,
+.response__slider .slick-arrow.slick-prev {
+  position: absolute;
+  bottom: -60px;
+  left: calc(50% - 65px - 40px);
+}
+
+.our-horses .slick-arrow.slick-prev::before,
+.response__slider .slick-arrow.slick-prev::before {
+  content: url(/img/buttons-img/left.png);
+}
+
+/* Стрелка вправо */
+.our-horses .slick-arrow.slick-next,
+.response__slider .slick-arrow.slick-next {
+  position: absolute;
+  bottom: -60px;
+  right: calc(50% - 65px - 40px);
+}
+
+.our-hors, .slick-arrow.slick-next::before,
+.our-horses .slick-arrow.slick-next::before,
+.response__slider .slick-arrow.slick-next::before {
+  content: url(/img/buttons-img/right.png);
+}
+
+/* Точки (булиты) */
+.our-horses .slick-dots,
+.response__slider .slick-dots {
+  width: 96px;
+  height: 8px;
+  background: #EAEAEA;
+  box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: -45px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Активная точка */
+.our-horses .slick-dots li.slick-active,
+.response__slider .slick-dots li.slick-active {
+  background-color: #FFC700;
+  height: 100%;
+  width: 20px;
+  border-radius: 10px;
+}
+
+/* Элемент точки */
+.our-horses .slick-dots li button,
+.response__slider .slick-dots li button {
+  display: none;
 }

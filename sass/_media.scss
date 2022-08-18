@@ -1,17 +1,17 @@
 @media (max-width: 1024px) {
 
-    .slick-dots {
+    .slider .slick-dots {
         background: #EAEAEA;
         box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.17);
         border-radius: 10px;
         gap: 30px;
     }
 
-    .slick-dots button {
+    .slider .slick-dots button {
         display: none;
     }
 
-    .slick-dots li.slick-active button {
+    .slider .slick-dots li.slick-active button {
         display: block;
         background: linear-gradient(180deg, #9BCFFF 0%, #FFC700 0.01%, #FF9900 100%);
         border-radius: 10px;
@@ -295,6 +295,7 @@
     .slider .slick-arrow.slick-prev {
         left: 25%;
     }
+
     .slider .slick-arrow.slick-next {
         right: 7%;
     }
@@ -355,7 +356,21 @@
     }
 }
 
+@media (min-width: 320px) {
+
+    /* Слайд */
+    .response__slider .slick-slide {
+        width: 80vw;
+    }
+}
+
+
 @media (min-width: 480px) {
+    .section-title {
+        font-size: 27px;
+        line-height: 27px;
+    }
+
     .dark-page {
         width: 230px;
     }
@@ -502,8 +517,8 @@
 
     .club-directions {
         background-image: url(/img/backgrounds/club-directions/480px.png);
-        background-position: bottom 0 center;
-        background-size: 768px auto;
+        background-position: bottom 1px center;
+        background-size: 100% auto;
 
 
         &__content {
@@ -540,7 +555,6 @@
             border: 1px solid #EAEAEA;
             box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
             border-radius: 5px;
-            box-sizing: border-box;
         }
 
         &__button {
@@ -581,9 +595,21 @@
         border-radius: 5px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
     }
+
+    .our-horses {
+        &__title {
+            margin-top: 90px;
+            margin-bottom: 60px;
+        }
+    }
 }
 
 @media (min-width: 768px) {
+    .section-title {
+        font-size: 27px;
+        line-height: 36px;
+    }
+
     .header {
         height: 60px;
         align-items: flex-start;
@@ -768,7 +794,7 @@
 
     .club-directions {
         background-image: url(/img/backgrounds/club-directions/768px.png);
-        background-position: bottom 0 center;
+        background-position: bottom 1px center;
         background-size: 1000px auto;
 
 
@@ -803,7 +829,6 @@
             border: 1px solid #EAEAEA;
             box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
             border-radius: 5px;
-            box-sizing: border-box;
         }
 
         &__button {
@@ -844,9 +869,29 @@
         border-radius: 5px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
     }
+
+    .our-horses {
+        &__title {
+            margin-top: 90px;
+            margin-bottom: 65px;
+        }
+    }
+
+    .response {
+
+        /* Слайд */
+        &__slider .slick-slide {
+            width: 46vw;
+        }
+    }
 }
 
 @media (min-width: 1000px) {
+    .section-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
     .header__logo {
         height: 50px;
         width: 150px;
@@ -1043,7 +1088,6 @@
             border: 1px solid #EAEAEA;
             box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
             border-radius: 5px;
-            box-sizing: border-box;
         }
 
         &__item:nth-child(6n+4),
@@ -1085,9 +1129,98 @@
         border-radius: 5px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
     }
+
+    .our-horses {
+        &__title {
+            margin-top: 120px;
+            margin-bottom: 40px;
+        }
+
+        &__cards .slick-track {
+            padding-top: 35px;
+            padding-bottom: 30px;
+            left: calc(50vw - 22vw - 11vw);
+        }
+
+        &__image {
+            max-width: 210px;
+        }
+
+        &__cards .slick-slide {
+            width: 22vw;
+        }
+    }
+
+    .response {
+
+        &__slider .slick-slide {
+            width: 33.3vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        &__slider .slick-track {
+            left: calc(50vw - 33.3vw);
+        }
+    }
+
+
+
+    .our-horses__cards .slick-slide:not(.slick-slide.slick-active),
+    .response__slider .slick-slide:not(.slick-slide.slick-active) {
+        position: relative;
+        top: -40px;
+        opacity: 0.4;
+    }
+
+    /* Точки (булиты) */
+    .our-horses__cards .slick-dots,
+    .response__slider .slick-dots {
+        width: 96px;
+        height: 8px;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        bottom: -45px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .our-horses__cards .slick-dots li,
+    .response__slider .slick-dots li {
+        background-color: #E1E1E1;
+        width: 8px;
+        border-radius: 50%;
+    }
+
+    /* Активная точка */
+    .our-horses__cards .slick-dots li.slick-active,
+    .response__slider .slick-dots li.slick-active {
+        background-color: #FFC700;
+        width: 8px;
+        border-radius: 50%;
+
+    }
+
+    /* Элемент точки */
+    .our-horses__cards .slick-dots li button,
+    .response__slider .slick-dots li button {
+        display: none;
+        width: 8px;
+    }
 }
 
 @media (min-width: 1920px) {
+    .section-title {
+        font-size: 40px;
+        line-height: 36px;
+    }
+
     .header__navigation {
         margin-left: 350px;
     }
@@ -1247,7 +1380,6 @@
             border: 1px solid #EAEAEA;
             box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
             border-radius: 5px;
-            box-sizing: border-box;
         }
 
         &__item:nth-child(2n+2) {
@@ -1295,5 +1427,12 @@
     .direction-card-description {
         font-size: 16px;
         line-height: 21px;
+    }
+
+    .our-horses {
+        &__title {
+            margin-top: 150px;
+            margin-bottom: 95px;
+        }
     }
 }

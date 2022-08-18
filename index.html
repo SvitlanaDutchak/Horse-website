@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
   <link rel="icon" href="img/logo1.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +27,10 @@
     <div class="logo"><a href="#"><img class="header__logo" src="img/logo1.svg" alt="logo"></a></div>
     <nav class="header__navigation">
       <ul id="header-ul-menu" class="ul-display-none">
-        <li class="header__item"><a class="header__link" href="#">Про нас</a></li>
-        <li class="header__item"><a class="header__link" href="#">Послуги та ціни</a></li>
-        <li class="header__item"><a class="header__link" href="#">Альбом</a></li>
-        <li class="header__item"><a class="header__link" href="#">Контакти</a></li>
+        <li class="header__item"><a class="header__link" href="#about">Про нас</a></li>
+        <li class="header__item"><a class="header__link" href="#directions-and-prices">Послуги та ціни</a></li>
+        <li class="header__item"><a class="header__link" href="#album">Альбом</a></li>
+        <li class="header__item"><a class="header__link" href="#contacts">Контакти</a></li>
       </ul>
 
       <div class="menu-button">
@@ -79,6 +79,7 @@
   </section>
 
   <section class="about">
+    <a name="about"></a>
     <div class="container">
       <h2 class="sub-title">Про наш клуб</h2>
       <div class="about__row">
@@ -149,7 +150,9 @@
       </div>
     </div>
   </section>
+
   <section>
+    <a name="directions-and-prices"></a>
     <div class="club-directions">
       <div class="club-directions__content container">
         <h2 class="club-directions__section-title section-title">Напрями клубу</h2>
@@ -216,7 +219,9 @@
       <img class="club-directions__clouds" src="/img/clouds-bottom.png" alt="cloud-bottom">
     </div>
   </section>
+
   <section>
+    <a name="album"></a>
     <h2 class="sub-title">Наші відвідувачі</h2>
     <div class="slider">
       <div class="slider__card">
@@ -413,6 +418,74 @@
       </div>
     </div>
   </section>
+
+  <section class="our-horses">
+    <h2 class="section-title our-horses__title">Наші коні</h2>
+    <div class="our-horses__cards">
+
+      <div class="our-horses__card-content">
+        <div class="our-horses__card">
+          <img class="our-horses__image" src="/img/our-horses/Yudzhun.png" alt="Yudzhun horse">
+          <h3 class="our-horses__name-horse">Юджин</h3>
+          <div class="green-line"></div>
+          <p class="our-horses__description section-sub-title">
+            Уроки професійної верхової їзди для любителів та початківців
+          </p>
+        </div>
+      </div>
+
+      <div class="our-horses__card-content">
+        <div class="our-horses__card">
+          <img class="our-horses__image" src="/img/our-horses/Melisa.png" alt="Melisa horse">
+          <h3 class="our-horses__name-horse">Меліса</h3>
+          <div class="green-line"></div>
+          <p class="our-horses__description section-sub-title">
+            Уроки професійної верхової їзди для любителів та початківців
+          </p>
+        </div>
+      </div>
+
+      <div class="our-horses__card-content">
+        <div class="our-horses__card">
+          <img class="our-horses__image" src="/img/our-horses/Cyan.png" alt="Cyan horse">
+          <h3 class="our-horses__name-horse">Ціан</h3>
+          <div class="green-line"></div>
+          <p class="our-horses__description section-sub-title">
+            Уроки професійної верхової їзди для любителів та початківців
+          </p>
+        </div>
+      </div>
+      <div class="our-horses__card-content">
+        <div class="our-horses__card">
+          <img class="our-horses__image" src="/img/our-horses/Hesana.png" alt="Hesana horse">
+          <h3 class="our-horses__name-horse">Хесана</h3>
+          <div class="green-line"></div>
+          <p class="our-horses__description section-sub-title">
+            Уроки професійної верхової їзди для любителів та початківців
+          </p>
+        </div>
+      </div>
+
+      <div class="our-horses__card-content">
+        <div class="our-horses__card">
+          <img class="our-horses__image" src="/img/our-horses/Zhazel.png" alt="Zhazel horse">
+          <h3 class="our-horses__name-horse">Жазель</h3>
+          <div class="green-line"></div>
+          <p class="our-horses__description section-sub-title">
+            Уроки професійної верхової їзди для любителів та початківців
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="status">
+      <div class="slider-button-left button-slider"><img src="/img/buttons-img/left.png" alt="left button"></div>
+      <div class="status-line">
+        <div class="status-position"></div>
+      </div>
+      <div class="slider-button-right button-slider"><img src="/img/buttons-img/right.png" alt="right button"></div>
+    </div> -->
+  </section>
+
   <section class="questions">
     <div class="questions__cloud questions__cloud--top"></div>
     <div class="questions__cloud questions__cloud--bottom"></div>
@@ -436,7 +509,92 @@
       <img src="img/Куст.png" alt="img" class="questions__img">
     </div>
   </section>
+
+  <section class="response">
+    <h2 class="section-title response__title">Про нас говорять клієнти</h2>
+    <div class="response__slider">
+      <div class="response__item-wrap">
+        <div class="response__item">
+          <p class="response__message response__message-text">Розвиває силу, гнучкість та координацію вершника;
+            Випрямляється постава та підвищується стресостійкість; Спілкування з конем лікує розумові відхилення.</p>
+          <div class="response__button-more">
+            <p class="response__more-text">Детальніше</p>
+            <img src="/img/arrow-response.png" alt="response arrow" class="response__more-img">
+          </div>
+          <div class="response__person">
+            <div class="response__person-info">
+              <img src="/img/response-user-photo/1.png" alt="person photo" class="person-photo">
+              <div class="person__name-and-social-networks">
+                <p class="response__person-name response__person-name-text">Констянтин Сюткін</p>
+                <div class="response__social-networks">
+                  <a href="http://www.instagram.com"><img class="response__social-network"
+                      src="/img/social-networks/instagram.png" alt="instagram logo"></a>
+                  <a href="https://www.facebook.com"><img class="response__social-network"
+                      src="/img/social-networks/facebook.png" alt="facebook logo"></a>
+                </div>
+              </div>
+            </div>
+            <div class="quotes"><img src="/img/quote.png" alt="quotes"></div>
+          </div>
+        </div>
+      </div>
+      <div class="response__item-wrap">
+        <div class="response__item">
+          <p class="response__message response__message-text">Позитивні емоції, розслаблення, почуття відповідальності
+            і навіть деякої казковості, відразу з'являється гарна постава, працюють усі групи м'язів.</p>
+          <div class="response__button-more">
+            <p class="response__more-text">Детальніше</p>
+            <img src="/img/arrow-response.png" alt="response arrow" class="response__more-img">
+          </div>
+          <div class="response__person">
+            <div class="response__person-info">
+              <img src="/img/response-user-photo/2.png" alt="person photo" class="person-photo">
+              <div class="person__name-and-social-networks">
+                <p class="response__person-name response__person-name-text">Валентина Сорокіна</p>
+                <div class="response__social-networks">
+                  <a href="http://www.instagram.com"><img class="response__social-network"
+                      src="/img/social-networks/instagram.png" alt="instagram logo"></a>
+                  <a href="https://www.facebook.com"><img class="response__social-network"
+                      src="/img/social-networks/facebook.png" alt="facebook logo"></a>
+                </div>
+              </div>
+            </div>
+            <div class="quotes"><img src="/img/quote.png" alt="quotes"></div>
+          </div>
+        </div>
+      </div>
+      <div class="response__item-wrap">
+        <div class="response__item">
+          <p class="response__message response__message-text">Плюсів до безумства багато! Реакція, спілкування з
+            твариною, любов, розуміння, порозуміння, терпіння, тут можна перераховувати та перераховувати дуже багато
+            всього!</p>
+          <div class="response__button-more">
+            <p class="response__more-text">Детальніше</p>
+            <img src="/img/arrow-response.png" alt="response arrow" class="response__more-img">
+          </div>
+          <div class="response__person">
+            <div class="response__person-info">
+              <img src="/img/response-user-photo/3.png" alt="person photo" class="person-photo">
+              <div class="person__name-and-social-networks">
+                <p class="response__person-name response__person-name-text">Світлана Мирна</p>
+                <div class="response__social-networks">
+                  <a href="http://www.instagram.com"><img class="response__social-network"
+                      src="/img/social-networks/instagram.png" alt="instagram logo"></a>
+                  <a href="https://www.facebook.com"><img class="response__social-network"
+                      src="/img/social-networks/facebook.png" alt="facebook logo"></a>
+                </div>
+              </div>
+            </div>
+            <div class="quotes"><img src="/img/quote.png" alt="quotes"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <section class="map">
+    <a name="contacts"></a>
     <div id="map" class="map"></div>
     <div class="map__tree map__tree--left">
       <img src="img/image6.png" alt="tree">
@@ -466,62 +624,7 @@
     </div>
   </section>
 
-  <section>
-    <div class="horse-slider">
-      <div class="club-directions__item">
-        <div class="card-content">
-          <img src="/img/direction-first.png" alt="" class="direction-card-image">
-          <div class="direction-card-title">Уроки верхової їзди</div>
-          <div class="green-line"></div>
-          <p class="direction-card-description">Уроки професійної верхової їзди
-            для любителів та початківців</p>
-        </div>
-      </div>
-      <div class="club-directions__item">
-        <div class="card-content">
-          <img src="/img/direction-second.png" alt="" class="direction-card-image">
-          <div class="direction-card-title">Прогулянки верхи з тренером</div>
-          <div class="green-line"></div>
-          <p class="direction-card-description">Тренування клієнтів, підготовка
-            до занять кінним спортом на професійному рівні під керівництвом досвідчених тренерів</p>
-        </div>
-      </div>
-      <div class="club-directions__item">
-        <div class="card-content">
-          <img src="/img/direction-third.png" alt="" class="direction-card-image">
-          <div class="direction-card-title">Фотосесії</div>
-          <div class="green-line"></div>
-          <p class="direction-card-description">Уроки професійної верхової їзди для любителів та початківців</p>
-        </div>
-      </div>
-      <div class="club-directions__item">
-        <div class="card-content">
-          <img src="/img/direction-fourth.png" alt="" class="direction-card-image">
-          <div class="direction-card-title">Прогулянки верхи з тренером</div>
-          <div class="green-line"></div>
-          <p class="direction-card-description">Тренування клієнтів, підготовка
-            до занять кінним спортом на професійному рівні під керівництвом досвідчених тренерів</p>
-        </div>
-      </div>
-      <div class="club-directions__item">
-        <div class="card-content">
-          <img src="/img/direction-fifth.png" alt="" class="direction-card-image">
-          <div class="direction-card-title">Прогулянки верхи з тренером</div>
-          <div class="green-line"></div>
-          <p class="direction-card-description">Тренування клієнтів, підготовка
-            до занять кінним спортом на професійному рівні під керівництвом досвідчених тренерів</p>
-        </div>
-      </div>
-      <div class="club-directions__item">
-        <div class="card-content">
-          <img src="/img/direction-sixth.png" alt="" class="direction-card-image">
-          <div class="direction-card-title">Фотосесії</div>
-          <div class="green-line"></div>
-          <p class="direction-card-description">Уроки професійної верхової їзди для любителів та початківців</p>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__row">
@@ -565,6 +668,7 @@
   <script src="js/map.js"></script>
   <script src="js/burger-menu.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
