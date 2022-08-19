@@ -39,14 +39,6 @@ function closeModal()  {
 closeButton.addEventListener('click', closeModal);
 orderCall.addEventListener('click', closeModal);
 
-const modalImage = document.getElementsByClassName('slider__item');
-
-for (let item of modalImage ) {
-  item.addEventListener('click', function() {
-    document.body.classList.toggle("look-scroll")
-    item.classList.toggle("is-active");
-  }); 
-}
 
 
 
